@@ -41,8 +41,8 @@ pico_set_program_name(Tarefa-Conversores-U4C8 "Tarefa-Conversores-U4C8")
 pico_set_program_version(Tarefa-Conversores-U4C8 "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
-pico_enable_stdio_uart(Tarefa-Conversores-U4C8 0)
-pico_enable_stdio_usb(Tarefa-Conversores-U4C8 0)
+pico_enable_stdio_uart(Tarefa-Conversores-U4C8 1)
+pico_enable_stdio_usb(Tarefa-Conversores-U4C8 1)
 
 # Add the standard library to the build
 target_link_libraries(Tarefa-Conversores-U4C8
@@ -55,7 +55,8 @@ target_include_directories(Tarefa-Conversores-U4C8 PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(Tarefa-Conversores-U4C8 
-        
+        hardware_adc
+        hardware_pwm
         )
 
 pico_add_extra_outputs(Tarefa-Conversores-U4C8)
