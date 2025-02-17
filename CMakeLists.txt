@@ -57,6 +57,7 @@ target_include_directories(Tarefa-Conversores-U4C8 PRIVATE
 target_link_libraries(Tarefa-Conversores-U4C8 
         hardware_adc
         hardware_pwm
+        hardware_i2c
         )
 
 pico_add_extra_outputs(Tarefa-Conversores-U4C8)
