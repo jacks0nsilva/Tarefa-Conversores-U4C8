@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Tarefa-Conversores-U4C8 Tarefa-Conversores-U4C8.c )
+add_executable(Tarefa-Conversores-U4C8 Tarefa-Conversores-U4C8.c libs/src/functions_pwm.c )
 
 pico_set_program_name(Tarefa-Conversores-U4C8 "Tarefa-Conversores-U4C8")
 pico_set_program_version(Tarefa-Conversores-U4C8 "0.1")
