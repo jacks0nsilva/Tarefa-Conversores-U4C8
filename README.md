@@ -6,7 +6,7 @@ Tarefa prática do programa de residência EmbarcaTech. Este projeto tem como ob
 
 ## Vídeo de apresentação 🎥
 
-[Vídeo de apresentação do projeto](link_do_video)
+[Vídeo de apresentação do projeto](https://drive.google.com/file/d/1XZvW8hK3Y7LITWp9lEv-nS9K51GHDu37/view?usp=drive_link)
 
 ## Funcionalidades 📌
 
