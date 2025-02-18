@@ -1,4 +1,0 @@
-[wokwi]
-version = 1
-firmware = 'build/Tarefa-Conversores-U4C8.uf2'
-elf = 'build/Tarefa-Conversores-U4C8.elf'

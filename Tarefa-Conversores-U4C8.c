@@ -106,7 +106,7 @@ static void gpio_irq_handler(uint gpio, uint32_t events) {
     if(current_time - last_time > 200000){
         last_time = current_time;
           if (gpio == SW_PIN) {
-        gpio_put(11, !gpio_get(11)); // Se o botão do Joystick for pressionado, inverte o estado do LED verde
+        gpio_put(LED_GREEN, !gpio_get(LED_GREEN)); // Se o botão do Joystick for pressionado, inverte o estado do LED verde
         retangule_state = !retangule_state;
     } else if (gpio == BUTTON_A) {
         led_state = !led_state; // Se o botão A for pressionado, desativa os LEDs vermelho e azul
