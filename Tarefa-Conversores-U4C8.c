@@ -12,9 +12,9 @@ static volatile bool retangule_state = false;
 
 ssd1306_t ssd;
 
-// Variables to store square position
-uint8_t square_x = 60; // Initial X position
-uint8_t square_y = 28; // Initial Y position
+// Variáveis para definir a posição inicial do eixo X e Y do quadrado
+uint8_t square_x = 60; // Posição inicial do quadrado no eixo X
+uint8_t square_y = 28; // Posição inicial do quadrado no eixo Y
 
 
 static void gpio_irq_handler(uint gpio, uint32_t events); // Declaração da função de tratamento de interrupção
