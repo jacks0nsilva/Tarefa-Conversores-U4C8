@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Tarefa-Conversores-U4C8 Tarefa-Conversores-U4C8.c libs/src/functions_pwm.c )
+add_executable(Tarefa-Conversores-U4C8 Tarefa-Conversores-U4C8.c libs/src/functions_pwm.c libs/src/ssd1306.c )
 
 pico_set_program_name(Tarefa-Conversores-U4C8 "Tarefa-Conversores-U4C8")
 pico_set_program_version(Tarefa-Conversores-U4C8 "0.1")
@@ -57,6 +57,7 @@ target_include_directories(Tarefa-Conversores-U4C8 PRIVATE
 target_link_libraries(Tarefa-Conversores-U4C8 
         hardware_adc
         hardware_pwm
+        hardware_i2c
         )
 
 pico_add_extra_outputs(Tarefa-Conversores-U4C8)
